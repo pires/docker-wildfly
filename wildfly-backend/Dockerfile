@@ -16,9 +16,9 @@ RUN echo "oracle-java7-installer  shared/accepted-oracle-license-v1-1 boolean tr
 RUN apt-get -y install oracle-java7-installer
 
 # Download, extract and install WildFly
-RUN wget http://download.jboss.org/wildfly/8.0.0.Beta1/wildfly-8.0.0.Beta1.tar.gz
-RUN tar -xf wildfly-8.0.0.Beta1.tar.gz 
-RUN rm wildfly-8.0.0.Beta1.tar.gz 
+RUN wget http://download.jboss.org/wildfly/8.0.0.CR1/wildfly-8.0.0.CR1.tar.gz
+RUN tar -xf wildfly-8.0.0.CR1.tar.gz 
+RUN rm wildfly-8.0.0.CR1.tar.gz 
 RUN ln -s wildfly-8.* wildfly
 
 # Define administrative credentials
